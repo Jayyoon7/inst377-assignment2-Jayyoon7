@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <title>Assignment 2</title>
+    <link rel="stylesheet" href="layout.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="javascript.js"></script>
+    <script src="https://rawgit.com/ruyadorno/simple-slider/master/dist/simpleslider.min.js"></script>
+</head>
+
+<body>
+
+    <h1>INST377 - Doggos</h1>
+
+    <!-- Navigation -->
+    <nav id="main-nav">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="stocks.html">Stocks</a></li>
+            <li><a href="dogs.html">Dogs</a></li>
+        </ul>
+    </nav>
+
+    <h2>Doggos! &#128054;</h2>
+
+    <!-- Pictures -->
+    <div id="dog-carousel" data-simple-slider></div>
+
+    <!-- Breeds -->
+    <div id="buttons-container"></div>
+    <div id="breed-info-container" style="display: none;">
+        <h2 id="breed-name"></h2>
+        <p id="breed-description"></p>
+        <p>Min Life: <span id="min-life"></span></p>
+        <p>Max Life: <span id="max-life"></span></p>
+    </div>
+
+    <!-- Annyang -->
+    <footer id="audioSwitch">
+        <h2>In this web page there are options to navigate using audio!</h2>
+        <h3>Ensure your computer is enabled to use this feature</h3>
+        <ul>
+            <li>Load Dog Breed
+                <ul>
+                    <li>Say: Load Dog Breed &lt;Dog Breed Name&gt;</li>
+                </ul>
+            </li>
+            <li>Navigate to a different page
+                <ul>
+                    <li>Say: Navigate to &lt;page&gt;</li>
+                </ul>
+            </li>
+            <li>Change the page color
+                <ul>
+                    <li>Say: Change the color to &lt;color&gt;</li>
+                </ul>
+            </li>
+            <li>Say hello back to you!
+                <ul>
+                    <li>Say: Hello</li>
+                </ul>
+            </li>
+        </ul>
+        <!-- Buttons to turn on and off Annyang -->
+        <div class="buttons-home">
+            <button class="button-30" role="button" onclick="turnOnAnnyang()">Turn On</button>
+            <button class="button-30" role="button" onclick="turnOffAnnyang()">Turn Off</button>
+        </div>
+    </footer>
+
+</body>
+
+</html>

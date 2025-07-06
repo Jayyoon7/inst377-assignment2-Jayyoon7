@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <title>Assignment 2</title>
+    <link rel="stylesheet" href="layout.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="javascript.js"></script>
+</head>
+
+<body>
+    <h1>INST377 - Activities</h1>
+
+    <!-- Navigation -->
+    <nav id="main-nav">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="stocks.html">Stocks</a></li>
+            <li><a href="dogs.html">Dogs</a></li>
+        </ul>
+    </nav>
+
+    <h2>These are some different activities we can try!</h2>
+
+    <!-- Buttons -->
+    <div class="buttons-home">
+        <button class="button-89" role="button" onclick="window.location.href='stocks.html'">Stocks</button>
+        <button class="button-89" role="button" onclick="window.location.href='dogs.html'">Dogs</button>
+    </div>
+
+    <!-- Quote -->
+    <div id="quoteBox">
+        <h2>Quote of the Page Load</h2>
+        <h3 id="quote"></h3>
+    </div>
+
+    <!-- Annyang -->
+    <footer id="audioSwitch">
+        <h2>In this web page there are options to navigate using audio!</h2>
+        <h3>Ensure your computer is enabled to use this feature</h3>
+        <ul>
+            <li>Navigate to a different page
+                <ul>
+                    <li>Say: Navigate to &lt;page&gt;</li>
+                </ul>
+            </li>
+            <li>Change the page color
+                <ul>
+                    <li>Say: Change the color to &lt;color&gt;</li>
+                </ul>
+            </li>
+            <li>Say hello back to you!
+                <ul>
+                    <li>Say: Hello</li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- Buttons to turn on and off Annyang -->
+        <div class="buttons-home">
+            <button class="button-30" role="button" onclick="turnOnAnnyang()">Turn On</button>
+            <button class="button-30" role="button" onclick="turnOffAnnyang()">Turn Off</button>
+        </div>
+    </footer>
+
+</body>
+
+</html>
